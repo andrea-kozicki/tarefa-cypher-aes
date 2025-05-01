@@ -6,17 +6,21 @@
     <title>Tarefa Cypher AES</title>
 </head>
 <body>
-    <form action="" method="post">
-        
+    <form id="cypherForm">
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome">
-        <br>
+        <input type="text" name="nome" id="nome"><br>
+
         <label for="email">Email: </label>
-        <input type="email" name="email" id="email">
-        <br>
+        <input type="email" name="email" id="email"><br>
+
         <label for="mensagem">Mensagem: </label>
-        <input type="text" name="mensagem" id="mensagem">
-        
+        <input type="text" name="mensagem" id="mensagem"><br>
+
+        <button type="submit">Enviar</button>
     </form>
+
+    <p><strong>Resposta do servidor:</strong> <span id="resposta"></span></p>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
